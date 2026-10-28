@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Birthday Reminder</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>🎂 Birthday Reminder</h1>
+      <div class="sub">Birthdays · policy alerts · premium forecast</div>
+    </div>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <nav class="appbar">
+    <label class="btn primary">＋ Add ePartner PDF<input type="file" id="pdfIn" accept=".pdf,application/pdf" multiple hidden></label>
+    <button class="btn" id="btnContacts">Contacts</button>
+    <button class="btn" id="btnSettings">Settings &amp; backup</button>
+  </nav>
+
+  <main id="main"><div class="empty">Loading…</div></main>
+
+  <footer class="foot">
+    🔒 Your client data stays in <strong>this browser on this device</strong>. Nothing is uploaded: the PDF is read on your device.
+    Messages are never sent automatically; you press Send in WhatsApp.
+  </footer>
+</div>
+
+<dialog id="dlgContacts">
+  <div class="dlg-head"><h3>Contacts</h3><form method="dialog"><button class="btn ghost" aria-label="Close">✕</button></form></div>
+  <p class="lead">Add WhatsApp numbers and how you greet each client. Language: EN, ZH or BM.</p>
+  <div class="dlg-tools">
+    <input type="search" id="cSearch" placeholder="Search name…">
+    <label class="btn">Import contacts.csv<input type="file" id="cImport" accept=".csv,text/csv" hidden></label>
+    <button class="btn" id="cExport">Export CSV</button>
+  </div>
+  <div class="table-scroll"><table id="cTable"></table></div>
+  <div class="dlg-foot"><button class="btn primary" id="cSave">Save contacts</button></div>
+</dialog>
+
+<dialog id="dlgSettings">
+  <div class="dlg-head"><h3>Settings &amp; backup</h3><form method="dialog"><button class="btn ghost" aria-label="Close">✕</button></form></div>
+  <div class="form">
+    <label>Your sign-off name <input id="sSender"></label>
+    <label>Show birthdays coming up in the next (days) <input id="sAhead" type="number" min="1" max="31"></label>
+    <label>Show missed birthdays from the last (days) <input id="sBack" type="number" min="0" max="14"></label>
+    <label>Client name on your pictures
+      <select id="sNamePos"><option value="bottom">Bottom</option><option value="top">Top</option><option value="off">Off</option></select></label>
+    <button class="btn primary" id="sSave">Save settings</button>
+  </div>
+  <h4>Loaded listings</h4>
+  <div id="sListings"></div>
+  <h4>Backup &amp; move to another device</h4>
+  <p class="lead">Data is stored only in this browser. To use the same contacts on your phone and PC, download a backup here and restore it on the other device. The backup file contains client data, so keep it private.</p>
+  <div class="dlg-tools">
+    <button class="btn" id="sBackup">Download backup</button>
+    <label class="btn">Restore backup<input type="file" id="sRestore" accept=".json,application/json" hidden></label>
+    <button class="btn" id="sLog">Export send log</button>
+    <button class="btn danger" id="sClear">Delete all data</button>
+  </div>
+</dialog>
+
+<div id="toast" role="status"></div>
+<script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+<script src="lib/cards.js"></script>
+<script src="lib/pdftext.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

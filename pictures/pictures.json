@@ -1,0 +1,7 @@
+{
+  "any": [],
+  "young": ["young/pink-roses-cake.en-zh.webp"],
+  "adult": ["adult/navy-gold-cake.en-zh.webp", "adult/pink-roses-cake.en-zh.webp"],
+  "mature": ["mature/navy-gold-cake.en-zh.webp", "mature/tea-mountains.en-zh.webp"],
+  "senior": ["senior/longevity-peony.zh.webp", "senior/tea-mountains.en-zh.webp"]
+}

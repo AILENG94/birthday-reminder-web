@@ -1,0 +1,5 @@
+# Never upload client data
+*.pdf
+*.csv
+birthday-reminder-backup-*.json
+send-log*

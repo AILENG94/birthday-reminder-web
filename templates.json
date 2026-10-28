@@ -1,0 +1,42 @@
+{
+  "_help": "Birthday message wording. {name} = preferred name, {sender} = your name from config.json. Each option has a label (shown in the Wording menu on each card) and the text. \"for\": \"senior\" marks the version picked automatically for clients turning 65 or more. Add, edit or remove options freely. Keep messages warm and personal, with no product or sales content.",
+  "EN": {
+    "today": [
+      { "label": "Warm thank-you", "text": "Happy Birthday, {name}! 🎂 Wishing you good health, happiness and a wonderful year ahead. Thank you for your trust all these years - it's always a privilege to be part of your journey. Have a lovely celebration with your loved ones!\n\n- {sender}" },
+      { "label": "Family & health", "text": "Dear {name}, happy birthday! 🎉 May this new year of life bring you joy, peace and many beautiful moments. Wishing you and your family good health always.\n\nWarm regards,\n{sender}" },
+      { "label": "Cheerful", "text": "Hi {name}, wishing you a very happy birthday! 🎈 Hope today is filled with laughter and the people you love. Here's to a healthy and blessed year ahead!\n\n- {sender}" },
+      { "label": "Short & sweet", "text": "Happy Birthday, {name}! 🎂 Wishing you a wonderful day and a year full of good health and happiness.\n\n- {sender}" },
+      { "label": "Respectful (seniors)", "for": "senior", "text": "Dear {name}, wishing you a very happy birthday! 🎂 May you be blessed with good health, peace and joy, surrounded by the love of your family. Thank you for your trust and friendship all these years.\n\nWith warm regards,\n{sender}" }
+    ],
+    "belated": [
+      { "label": "Belated - warm", "text": "Hi {name}, a belated happy birthday to you! 🎂 I hope you had a wonderful celebration. Wishing you good health, happiness and a fantastic year ahead.\n\n- {sender}" },
+      { "label": "Belated - short", "text": "Hi {name}, sorry this is a little late - happy belated birthday! 🎉 Wishing you good health and lots of happiness this year.\n\n- {sender}" }
+    ]
+  },
+  "ZH": {
+    "today": [
+      { "label": "感谢支持", "text": "{name}，生日快乐！🎂 祝您身体健康、平安喜乐，新的一岁一切顺心如意。感谢您一直以来的信任与支持，愿您和家人幸福美满！\n\n— {sender}" },
+      { "label": "温馨祝福", "text": "亲爱的{name}，祝您生日快乐！🎉 愿新的一年健康常伴、笑容常在，每一天都充满温暖与喜悦。\n\n— {sender}" },
+      { "label": "欢乐", "text": "{name}，今天是属于您的日子！🎈 祝您生日快乐，身体健康，万事如意，新的一岁收获满满！\n\n— {sender}" },
+      { "label": "简短", "text": "{name}，生日快乐！🎂 祝您天天开心，身体健康！\n\n— {sender}" },
+      { "label": "敬老祝寿（长辈）", "for": "senior", "text": "{name}，祝您生日快乐！🎂 福如东海，寿比南山！愿您身体健康、精神愉快，儿孙满堂，幸福安康。感谢您多年来的信任与支持！\n\n— {sender}" }
+    ],
+    "belated": [
+      { "label": "迟到的祝福", "text": "{name}，迟来的祝福，心意不减！🎂 祝您生日快乐，身体健康，新的一岁平安顺利、心想事成。\n\n— {sender}" },
+      { "label": "迟到·简短", "text": "{name}，迟到的生日快乐！🎉 愿您新的一岁健康平安、开心每一天！\n\n— {sender}" }
+    ]
+  },
+  "BM": {
+    "today": [
+      { "label": "Terima kasih", "text": "Selamat Hari Jadi, {name}! 🎂 Semoga dikurniakan kesihatan yang baik, kebahagiaan dan rezeki yang melimpah sepanjang tahun. Terima kasih atas kepercayaan anda selama ini.\n\n- {sender}" },
+      { "label": "Keluarga & kesihatan", "text": "Salam sejahtera {name}, selamat hari jadi! 🎉 Semoga hari istimewa ini dipenuhi kegembiraan bersama insan tersayang. Semoga sentiasa sihat dan bahagia.\n\n- {sender}" },
+      { "label": "Ceria", "text": "Hai {name}, Selamat Hari Jadi! 🎈 Semoga tahun baharu dalam hidup anda membawa lebih banyak kejayaan dan kebahagiaan.\n\n- {sender}" },
+      { "label": "Ringkas", "text": "Selamat Hari Jadi, {name}! 🎂 Semoga hari anda indah dan sentiasa sihat serta bahagia.\n\n- {sender}" },
+      { "label": "Hormat (warga emas)", "for": "senior", "text": "Salam sejahtera {name}, Selamat Hari Jadi! 🎂 Semoga dikurniakan kesihatan yang baik, ketenangan dan kebahagiaan bersama keluarga tersayang. Terima kasih atas kepercayaan anda selama ini.\n\nSalam hormat,\n{sender}" }
+    ],
+    "belated": [
+      { "label": "Lewat - mesra", "text": "Hai {name}, selamat hari jadi walaupun sedikit lewat! 🎂 Semoga anda sentiasa sihat, gembira dan diberkati sepanjang tahun ini.\n\n- {sender}" },
+      { "label": "Lewat - ringkas", "text": "Hai {name}, selamat hari jadi (walaupun terlewat)! 🎉 Semoga tahun ini penuh dengan kesihatan dan kegembiraan.\n\n- {sender}" }
+    ]
+  }
+}
