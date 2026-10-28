@@ -6,7 +6,13 @@
 <meta name="robots" content="noindex">
 <title>Birthday Reminder</title>
 <link rel="icon" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1f3a5f">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Birthdays">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="stylesheet" href="style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
@@ -24,7 +30,13 @@
     <label class="btn primary">＋ Add ePartner PDF<input type="file" id="pdfIn" accept=".pdf,application/pdf" multiple hidden></label>
     <button class="btn" id="btnContacts">Contacts</button>
     <button class="btn" id="btnSettings">Settings &amp; backup</button>
+    <button class="btn install" id="btnInstall" hidden>📲 Install app</button>
   </nav>
+
+<dialog id="dlgInstall">
+  <div class="dlg-head"><h3>📲 Add Birthday Reminder to your phone</h3><form method="dialog"><button class="btn ghost" aria-label="Close">✕</button></form></div>
+  <div id="installSteps"></div>
+</dialog>
 
   <main id="main"><div class="empty">Loading…</div></main>
 
@@ -72,6 +84,7 @@
 <script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
 <script src="lib/cards.js"></script>
 <script src="lib/pdftext.js"></script>
+<script src="install.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
